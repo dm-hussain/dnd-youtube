@@ -151,10 +151,13 @@ const handleClick= ()=>{
 
 
 
-      <YoutubeData className=''
+      {/* <YoutubeData className=''
       videoId={yVideoId}
       playListId={yPlayListId}
-      />
+      /> */}
+
+<YoutubeData key={`${yVideoId}-${yPlayListId}`} videoId={yVideoId} playListId={yPlayListId} />
+
 
     </>
   );

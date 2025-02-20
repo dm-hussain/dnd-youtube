@@ -52,7 +52,7 @@ const myAPI='AIzaSyCZR7FsXgcdvY9uAzpx8FQpB1qT-jkAdQc'
   }, [pId]);
 
   return (
-    <div className="  ">
+    <div >
       {/* Single Video Section */}
       {vId && video && (
         <div className="text-center mt-20" >
