@@ -1,0 +1,14 @@
+@import "tailwindcss";
+*{
+    /* border: 1px slid white !important;  */
+    box-sizing: border-box !important;
+}
+
+body{
+    background: #0d0101e0;
+ 
+}
+
+.hide{
+    display: none;
+}
