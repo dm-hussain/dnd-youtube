@@ -38,18 +38,19 @@ const handleClick= ()=>{
    }
 
    const output= getYouTubeUrlType(userUrl)
-   console.log(output);
+  //  console.log(output);
+  
    
 
     userInpRef.current.value=''
     
   }
 
-  useEffect(()=>{
-    console.log(yPlayListId);
-    console.log(yVideoId);
+  // useEffect(()=>{
+    // console.log(yPlayListId);
+    // console.log(yVideoId);
     
-  }, [yPlayListId, yVideoId])
+  // }, [yPlayListId, yVideoId])
 
 
 
@@ -67,6 +68,7 @@ const handleClick= ()=>{
   
       // Check if it's a valid YouTube domain
       if (!["youtube.com", "youtu.be"].includes(hostname)) {
+        alert('Invalid YouTube URL')
         return "Invalid YouTube URL";
       }
   
@@ -91,9 +93,11 @@ const handleClick= ()=>{
         setYPlayListId(playlistId);
         return "Playlist";
       } else {
+        alert('Invalid YouTube URL')
         return "Invalid YouTube URL";
       }
     } catch (error) {
+      alert('Invalid URL format')
       return "Invalid URL format";
     }
   }

@@ -58,8 +58,7 @@ const myAPI='AIzaSyCZR7FsXgcdvY9uAzpx8FQpB1qT-jkAdQc'
         <div className="text-center mt-20" >
           <div className="flex justify-center   ">
             <iframe
-              width="560"
-              height="315"
+               className='w-[90vw] h-auto md:w-[560px] md:h-[315px]'
               src={`https://www.youtube.com/embed/${video.id}`}
               title={video.snippet.title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -86,8 +85,8 @@ const myAPI='AIzaSyCZR7FsXgcdvY9uAzpx8FQpB1qT-jkAdQc'
             {videos.map((video, index) => (
               <div key={index} className="border border-yellow-500">
                 <iframe
-                  width="560"
-                  height="315"
+                  className='w-[90vw] h-auto md:w-[560px] md:h-[315px]'
+                   
                   src={`https://www.youtube.com/embed/${video.snippet.resourceId.videoId}`}
                   title={video.snippet.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
